@@ -1,7 +1,7 @@
 variable "ec2_ssh_key" {
   type        = string
   description = "SSH key to connect to the node-group"
-  default     = "chriskeypair"
+  default     = ""
 }
 
 # Resource: aws_iam_role

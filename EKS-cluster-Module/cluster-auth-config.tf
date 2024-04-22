@@ -2,13 +2,13 @@
 #2. Create tfvars for aws credentials storage.
 
 # variable "aws_access_key" {
-#   description = "AWS access key ID"
-#   default     = "AKIAXHINW4LQ4NZNGL5W"
+#   description = ""
+#   default     = ""
 # }
 
 # variable "aws_secret_key" {
-#   description = "AWS secret access key"
-#   default     = "iU0xhUtOByj0EPjkd47pGAyvf50Jbru95ydpYCMt"
+#   description = ""
+#   default     = ""
 # }
 
 # variable "aws_region" {
@@ -55,7 +55,7 @@ resource "null_resource" "bastion_setup" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("~/Downloads/chriskeypair.pem")
+    private_key = file("~/Downloads/")
 
     host = aws_instance.bastion_host.public_ip # Use the output variable to get the public IP
   }
@@ -77,7 +77,7 @@ resource "null_resource" "test_eks_connection_with_bastion" {
   connection {
     type        = "ssh"
     user        = "ec2-user"
-    private_key = file("~/Downloads/chriskeypair.pem")
+    private_key = file("~/Downloads/")
 
     host = aws_eks_node_group.nodes_general.private_ip
   }
