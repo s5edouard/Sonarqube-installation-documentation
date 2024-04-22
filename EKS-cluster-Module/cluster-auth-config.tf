@@ -1,32 +1,4 @@
-# 1.set your aws private key as an Env variable on your terminal: export CHRISKEYPAIR="VALUE"
-#2. Create tfvars for aws credentials storage.
 
-# variable "aws_access_key" {
-#   description = ""
-#   default     = ""
-# }
-
-# variable "aws_secret_key" {
-#   description = ""
-#   default     = ""
-# }
-
-# variable "aws_region" {
-#   description = "AWS region"
-#   default     = "us-east-1"
-# }
-
-# variable "aws_default_output" {
-#   description = "Default output format for AWS CLI commands"
-#   default     = "json"
-# }
-# variable "cluster_name" {
-#   description = "Name of the EKS cluster"
-#   default     = "DEVOPS-BFA"
-# }
-# 496634356449
-
-// iam_policy.json
 
 {
     "Version": "2012-10-17",
